@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="id">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Belajaryuk — Platform Belajar Modern</title>
+
+    <!-- GOOGLE FONTS -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
+        rel="stylesheet">
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <!-- BUNGKUSAN UTAMA LANDING PAGE -->
+    <div class="page-wrapper">
+
+        <!-- NAVBAR -->
+        <header class="navbar">
+            <div class="navbar-container">
+                <a href="#" class="logo">
+                    <span class="logo-accent">BELAJAR</span>YUK
+                </a>
+
+                <div class="nav-actions">
+                    <button class="btn-login" onclick="openModal('Masuk')">Masuk</button>
+                    <button class="btn-register" onclick="openModal('Daftar')">Daftar Gratis</button>
+
+                    <!-- HAMBURGER BUTTON -->
+                    <button class="hamburger" id="hamburgerBtn" onclick="toggleSidebar()" aria-label="Menu Navigasi">
+                        <span></span>
+                        <span></span>
+                        <span></span>
+                    </button>
+                </div>
+            </div>
+        </header>
+
+        <!-- OVERLAY -->
+        <div class="overlay" id="overlay" onclick="toggleSidebar()"></div>
+
+        <!-- SIDEBAR (DALAM BOUND CONTAINER) -->
+        <aside class="sidebar" id="sidebar">
+            <div class="sidebar-head">
+                <span class="sidebar-tag">NAVIGASI</span>
+                <h3>Menu Utama</h3>
+            </div>
+
+            <nav class="sidebar-nav">
+                <a href="#home" onclick="toggleSidebar()" class="active">
+                    <span class="nav-icon"></span>
+                    <span>Beranda</span>
+                </a>
+                <a href="elearning.html">
+                    <span class="nav-icon"></span>
+                    <span>E-Learning</span>
+                </a>
+                <a href="langganan.html">
+                    <span class="nav-icon"></span>
+                    <span>Langganan</span>
+                </a>
+                <a href="komunitas.html">
+                    <span class="nav-icon"></span>
+                    <span>Grup Komunitas</span>
+                </a>
+                <a href="bootcamp.html">
+                    <span class="nav-icon"></span>
+                    <span>Bootcamp</span>
+                </a>
+            </nav>
+        </aside>
+
+        <!-- KONTEN UTAMA -->
+        <main class="main-content" id="home">
+
+            <!-- HERO SECTION -->
+            <!-- HERO SECTION (AUTOSLIDE CAROUSEL) -->
+            <section class="hero">
+                <div class="hero-slider">
+                    <div class="hero-slides" id="heroSlides">
+
+                        <!-- SLIDE 1 -->
+                        <div class="hero-slide active">
+                            <img src="https://images.unsplash.com/photo-1456513080510-7bf3a84b82f8?auto=format&fit=crop&w=1200&q=80"
+                                alt="Hero 1" class="hero-img">
+                            <div class="hero-overlay">
+                                <span class="hero-badge">Mulai Karier Impianmu</span>
+                                <h1>Tingkatkan Skill Digital Lebih Cepat & Terarah</h1>
+                                <p>Akses ratusan materi eksklusif, bimbingan mentor berpengalaman, dan bangun portofolio
+                                    bernilai tinggi.</p>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 2 -->
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1522202176988-66273c2fd55f?auto=format&fit=crop&w=1200&q=80"
+                                alt="Hero 2" class="hero-img">
+                            <div class="hero-overlay">
+                                <span class="hero-badge">Belajar Komunitas</span>
+                                <h1>Diskusi & Kolaborasi Bareng Ribuan Member</h1>
+                                <p>Temukan kawan belajar, sharing projek, dan bangun network profesionalmu di platform
+                                    ini.</p>
+                            </div>
+                        </div>
+
+                        <!-- SLIDE 3 -->
+                        <div class="hero-slide">
+                            <img src="https://images.unsplash.com/photo-1516321318423-f06f85e504b3?auto=format&fit=crop&w=1200&q=80"
+                                alt="Hero 3" class="hero-img">
+                            <div class="hero-overlay">
+                                <span class="hero-badge">Sertifikat Terverifikasi</span>
+                                <h1>Kuasai Skill Praktis Siap Kerja</h1>
+                                <p>Materi terus diupdate sesuai dengan standar dan kebutuhan industri teknologi saat
+                                    ini.</p>
+                            </div>
+                        </div>
+
+                    </div>
+
+                    <!-- INDIKATOR TITIK (DOTS) -->
+                    <div class="hero-dots" id="heroDots">
+                        <span class="dot active" onclick="goToSlide(0)"></span>
+                        <span class="dot" onclick="goToSlide(1)"></span>
+                        <span class="dot" onclick="goToSlide(2)"></span>
+                    </div>
+                </div>
+            </section>
+
+            <!-- BENEFIT SECTION -->
+            <section class="benefits">
+                <div class="section-header">
+                    <span class="sub-title">MENGAPA BELAJARYUK?</span>
+                    <h2>Melatih Skill dengan Pengalaman Terbaik</h2>
+                </div>
+
+                <div class="benefit-grid">
+                    <article class="benefit-card">
+                        <div class="icon-box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/3429/3429402.png" alt="Member">
+                        </div>
+                        <h3>1.000.000+ Member</h3>
+                        <p>Bergabung dalam ekosistem belajar terbesar dan saling mendukung.</p>
+                    </article>
+
+                    <article class="benefit-card highlighted">
+                        <div class="icon-box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/2912/2912761.png" alt="Sertifikat">
+                        </div>
+                        <h3>Sertifikat Kelulusan</h3>
+                        <p>Dapatkan sertifikat terverifikasi untuk memperkuat profil profesionalmu.</p>
+                    </article>
+
+                    <article class="benefit-card">
+                        <div class="icon-box">
+                            <img src="https://cdn-icons-png.flaticon.com/512/1828/1828884.png" alt="Rating">
+                        </div>
+                        <h3>4.9/5.0 Rating</h3>
+                        <p>Kepuasan member terbukti melalui pengalaman belajar berstandar tinggi.</p>
+                    </article>
+                </div>
+            </section>
+
+            <!-- PROGRAM SECTION -->
+            <section class="program">
+                <div class="section-header">
+                    <span class="sub-title">PROGRAM UNGULAN</span>
+                    <h2>Pilihan Jalur Belajar Sesuai Kebutuhanmu</h2>
+                </div>
+
+                <!-- PROGRAM 1 -->
+                <div class="program-row">
+                    <div class="program-image-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/2232/2232688.png" alt="E-Learning">
+                    </div>
+                    <div class="program-content">
+                        <span class="program-tag">Fleksibel</span>
+                        <h3>Interactive E-Learning</h3>
+                        <p>Belajar kapan saja dan di mana saja dengan modul video interaktif yang dapat diakses
+                            selamanya.</p>
+                        <ul class="program-list">
+                            <li>Video studi kasus nyata & latihan kuis</li>
+                            <li>Sertifikat dan proyek portofolio siap pakai</li>
+                            <li>Akses seumur hidup ke seluruh materi</li>
+                        </ul>
+                    </div>
+                </div>
+
+                <!-- PROGRAM 2 -->
+                <div class="program-row reverse">
+                    <div class="program-content">
+                        <span class="program-tag community-tag">Networking</span>
+                        <h3>Grup Komunitas Eksklusif</h3>
+                        <p>Perluas jaringan profesional, diskusi teknis, dan temukan kawan kolaborasi untuk proyek
+                            barumu.</p>
+                        <ul class="program-list">
+                            <li>Diskusi harian bareng praktisi industri</li>
+                            <li>Info lowongan kerja & magang terupdate</li>
+                            <li>Sesi Live Q&A bulanan bersama mentor</li>
+                        </ul>
+                    </div>
+                    <div class="program-image-wrapper">
+                        <img src="https://cdn-icons-png.flaticon.com/512/1256/1256650.png" alt="Komunitas">
+                    </div>
+                </div>
+            </section>
+
+            <!-- MENTORS SECTION -->
+            <section class="mentors">
+                <div class="section-header">
+                    <span class="sub-title">MENTOR BERPENGALAMAN</span>
+                    <h2>Belajar Langsung dari Para Ahli</h2>
+                </div>
+
+                <div class="mentor-grid">
+                    <article class="mentor-card">
+                        <div class="mentor-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1534528741775-53994a69daeb?auto=format&fit=crop&w=500&q=80"
+                                alt="Maxwell Salvador">
+                        </div>
+                        <div class="mentor-info">
+                            <h3>Maxwell Salvador</h3>
+                            <p class="mentor-role">Lead Scientific Researcher</p>
+                            <button class="btn-mentor" onclick="openModal('Materi Maxwell Salvador')">Lihat
+                                Kelas</button>
+                        </div>
+                    </article>
+
+                    <article class="mentor-card">
+                        <div class="mentor-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1507003211169-0a1dd7228f2d?auto=format&fit=crop&w=500&q=80"
+                                alt="Alex Turner">
+                        </div>
+                        <div class="mentor-info">
+                            <h3>Alex Turner</h3>
+                            <p class="mentor-role">Senior Software Architect</p>
+                            <button class="btn-mentor" onclick="openModal('Materi Alex Turner')">Lihat Kelas</button>
+                        </div>
+                    </article>
+
+                    <article class="mentor-card">
+                        <div class="mentor-img-wrapper">
+                            <img src="https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?auto=format&fit=crop&w=500&q=80"
+                                alt="Sarah Jenkins">
+                        </div>
+                        <div class="mentor-info">
+                            <h3>Sarah Jenkins</h3>
+                            <p class="mentor-role">Principal Product Designer</p>
+                            <button class="btn-mentor" onclick="openModal('Materi Sarah Jenkins')">Lihat Kelas</button>
+                        </div>
+                    </article>
+                </div>
+            </section>
+
+            <!-- FOOTER -->
+            <footer class="footer">
+                <div class="footer-top">
+                    <div class="footer-brand">
+                        <h2><span class="logo-accent">BELAJAR</span>YUK</h2>
+                        <p>Platform pembelajaran digital terpercaya untuk mengakselerasi skill dan karier masa depanmu.
+                        </p>
+                    </div>
+
+                    <div class="footer-grid">
+                        <div class="footer-col">
+                            <h4>Alamat Kantor</h4>
+                            <p>PT. Keren Banget</p>
+                            <p>Griya Dros, Jl KH Abdullah Syafei No. 1</p>
+                            <p>Tebet Timur, Jakarta Selatan, 12820</p>
+                        </div>
+
+                        <div class="footer-col">
+                            <h4>Navigasi Cepat</h4>
+                            <a href="#home">Tentang Kami</a>
+                            <a href="elearning.html">E-Learning</a>
+                            <a href="komunitas.html">Grup Komunitas</a>
+                            <a href="#">Blog & Artikel</a>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="footer-bottom">
+                    <p>&copy; 2026 Belajaryuk. All rights reserved.</p>
+                </div>
+            </footer>
+
+        </main>
+
+    </div>
+
+    <!-- MODAL -->
+    <div class="modal" id="modal">
+        <div class="modal-box">
+            <button class="modal-close" onclick="closeModal()">×</button>
+            <h2 id="modalTitle">Masuk ke Akun</h2>
+            <p>Akses fitur penuh platform dan teruskan progres belajar kamu kapan saja.</p>
+            <button class="modal-action" onclick="closeModal()">Mengerti</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+
+</html>
