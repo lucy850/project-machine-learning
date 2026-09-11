@@ -8,7 +8,7 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;500;600;700;800&display=swap"
         rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="../css/style.css">
 </head>
 <body>
 
@@ -23,8 +23,8 @@
                 </a>
                 
                 <div class="nav-actions">
-                    <button class="btn-login" onclick="openModal('Masuk ke Akun')">Masuk</button>
-                    <button class="btn-register" onclick="openModal('Daftar Akun Gratis')">Daftar Gratis</button>
+                    <a href="../proses/masuk.php" class="btn-login">Masuk</a>
+                    <a href="../proses/daftar.php" class="btn-register" style="background:#4338ca;">Daftar Gratis</a>
 
                     <button class="hamburger" id="hamburgerBtn" onclick="toggleSidebar()" aria-label="Menu Navigasi">
                         <span></span>
@@ -134,7 +134,7 @@
                         </div>
 
                         <button class="btn-register" onclick="openModal('Pendaftaran Program Web Development')" style="width: 100%; border-radius: 20px; margin-bottom: 12px;">Daftar Sekarang</button>
-                        <a href="elearning.html" style="display: block; text-align: center; font-size: 12.5px; color: #64748b; font-weight: 600; text-decoration: none;">← Kembali ke Katalog</a>
+                        <a href="elearning.php" style="display: block; text-align: center; font-size: 12.5px; color: #64748b; font-weight: 600; text-decoration: none;">← Kembali ke Katalog</a>
                     </div>
                 </div>
 
@@ -145,6 +145,6 @@
 
     </div>
 
-    <script src="script.js"></script>
+    <script src="../js/script.js"></script>
 </body>
 </html>

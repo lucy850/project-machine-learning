@@ -28,6 +28,15 @@ a {
     color: inherit;
 }
 
+.btn-login,
+.btn-register {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    text-decoration: none; /* Menghilangkan garis bawah */
+    line-height: 1;        /* Menjaga teks tetap rata tengah vertikal */
+    box-sizing: border-box;
+}
 /* ==================================================
    PAGE WRAPPER (BOUND CONTAINER)
 ================================================== */
